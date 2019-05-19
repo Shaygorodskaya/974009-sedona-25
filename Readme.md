@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Виктория Шайгородская](https://up.htmlacademy.ru/htmlcss/25/user/974009).
-* Наставник: [Виктор Грида](https://htmlacademy.ru/courses).
+* Наставник: [Виктор Гирда](https://htmlacademy.ru/courses).
 
 ---
 
