@@ -5,67 +5,68 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <header class="main-header">
-      <nav class="main-navigation">
-        <a href="#" class="main-header-logo">
-          <img src="img/index-logo.svg" width="368" height="153" alt="Логотип Седона">
-        </a>
-        <ul class="site-navigation">
-          <li><a href="info.html">Информация</a></li>
-          <li><a href="photo.html">Фото и видео</a></li>
-          <li><a href="map.html">Карта штата</a></li>
-          <li><a>Гостиницы</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="catalog-item">
-        <div class="catalog-item-name">
-          <img src="img/product-1.jpg" class="catalog-item-image" width="220" height="165" alt="Amarta Resert & SPA">
-          <h3>
-            <a href="#" class="catalog-category">Amarta Resert & SPA</a>
-          </h3>
-          <div class="catalog-item-describthion">
-            <span class="item-name">Гостиница</span>
-            <span class="price">от 4000 ₽</span>
-            <a href="#" class="button-detail">Подробнее</a>
-            <button type="button" class="button-buy">Забронировать</button>
+    <div class="wrapper">
+      <header class="main-header">
+        <nav class="main-navigation">
+          <a href="#" class="main-header-logo">
+            <img src="img/index-logo.svg" width="368" height="153" alt="Логотип Седона">
+          </a>
+          <ul class="site-navigation">
+            <li><a href="info.html">Информация</a></li>
+            <li><a href="photo.html">Фото и видео</a></li>
+            <li><a href="map.html">Карта штата</a></li>
+            <li><a>Гостиницы</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="catalog-item">
+          <div class="catalog-item-name">
+            <img src="img/product-1.jpg" class="catalog-item-image" width="220" height="165" alt="Amarta Resert & SPA">
+              <a href="#" class="catalog-category">
+                <h3>Amarta Resert & SPA</h3>
+              </a>
+            <div class="catalog-item-describthion">
+              <span class="item-name">Гостиница</span>
+              <span class="price">от 4000 ₽</span>
+              <a href="#" class="button-detail">Подробнее</a>
+              <button type="button" class="button-buy">Забронировать</button>
+            </div>
+            <div class="catalog-rating">
+              <span class="star"></span>
+              <span class="star"></span>
+              <span class="star"></span>
+              <span class="star"></span>
+              <span class="catalog-item-rating">Рейтинг: 8,5</span>
+            </div>
           </div>
-          <div class="catalog-rating">
-            <span class="star"></span>
-            <span class="star"></span>
-            <span class="star"></span>
-            <span class="star"></span>
-            <span class="catalog-item-rating">Рейтинг: 8,5</span>
-          </div>
-        </div>
-      </section>
-      <section class="catalog-item">
-        <img src="img/product-1.jpg" class="catalog-item-image" width="220" height="165" alt="Desert Quail Inn">
-        <div class="catalog-item-name">
-          <h3>
-            <a href="#" class="catalog-category">Desert Quail Inn</a>
-          </h3>
-           <div class="catalog-item-describthion">
-             <span class="catalog-item-name">Мотель</span>
-             <span class="price">от 3000 ₽</span>
-             <a href="#" class="button-detail">Подробнее</a>
-             <button type="button" class="button-buy">Забронировать</button>
+        </section>
+        <section class="catalog-item">
+          <img src="img/product-1.jpg" class="catalog-item-image" width="220" height="165" alt="Desert Quail Inn">
+          <div class="catalog-item-name">
+              <a href="#" class="catalog-category">
+                <h3>Desert Quail Inn</h3>
+              </a>
+             <div class="catalog-item-describthion">
+               <span class="catalog-item-name">Мотель</span>
+               <span class="price">от 3000 ₽</span>
+               <a href="#" class="button-detail">Подробнее</a>
+               <button type="button" class="button-buy">Забронировать</button>
+             </div>
+             <div class="catalog-rating">
+               <span class="star"></span>
+               <span class="star"></span>
+               <span class="star"></span>
+               <span class="rating">Рейтинг: 8,9</span>
+             </div>
            </div>
-           <div class="catalog-rating">
-             <span class="star"></span>
-             <span class="star"></span>
-             <span class="star"></span>
-             <span class="rating">Рейтинг: 8,9</span>
-           </div>
-         </div>
         </section>
         <section class="catalog-item">
           <img src="img/product-1.jpg" class="catalog-item-image" width="220" height="165" alt="VILLAS AT POCO DIABLO">
           <div class="catalog-item-name">
-            <h3>
-              <a href="#" class="catalog-category">VILLAS AT POCO DIABLO</a>
-            </h3>
+              <a href="#" class="catalog-category">
+                  <h3>VILLAS AT POCO DIABLO  </h3>
+              </a>
             <div class="catalog-item-describthion">
               <span class="catalog-item-name">Апартаменты</span>
               <span class="catalog-item-price">от 2000 ₽</span>
@@ -93,5 +94,6 @@
         </a>
       </p>
     </footer>
+  </div>
   </body>
 </html>
