@@ -27,16 +27,18 @@
                 <h3>Amarta Resert & SPA</h3>
               </a>
             <div class="catalog-item-describthion">
-              <span class="item-name">Гостиница</span>
+              <span class="item-type">Гостиница</span>
               <span class="price">от 4000 ₽</span>
               <a href="#" class="button-detail">Подробнее</a>
-              <button type="button" class="button-buy">Забронировать</button>
+              <a href="#" class="button-buy">Забронировать</a>
             </div>
             <div class="catalog-rating">
-              <span class="star"></span>
-              <span class="star"></span>
-              <span class="star"></span>
-              <span class="star"></span>
+              <div class="rating-star">
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+              </div>
               <span class="catalog-item-rating">Рейтинг: 8,5</span>
             </div>
           </div>
@@ -48,15 +50,17 @@
                 <h3>Desert Quail Inn</h3>
               </a>
              <div class="catalog-item-describthion">
-               <span class="catalog-item-name">Мотель</span>
+               <span class="item-type">Мотель</span>
                <span class="price">от 3000 ₽</span>
                <a href="#" class="button-detail">Подробнее</a>
-               <button type="button" class="button-buy">Забронировать</button>
+               <a href="#" class="button-buy">Забронировать</a>
              </div>
              <div class="catalog-rating">
+                 <div class="rating-star">
                <span class="star"></span>
                <span class="star"></span>
                <span class="star"></span>
+             </div>
                <span class="rating">Рейтинг: 8,9</span>
              </div>
            </div>
@@ -65,24 +69,26 @@
           <img src="img/product-1.jpg" class="catalog-item-image" width="220" height="165" alt="VILLAS AT POCO DIABLO">
           <div class="catalog-item-name">
               <a href="#" class="catalog-category">
-                  <h3>VILLAS AT POCO DIABLO  </h3>
+                  <h3>VILLAS AT POCO DIABLO</h3>
               </a>
             <div class="catalog-item-describthion">
-              <span class="catalog-item-name">Апартаменты</span>
+              <span class="item-type">Апартаменты</span>
               <span class="catalog-item-price">от 2000 ₽</span>
               <a href="#" class="button-detail">Подробнее</a>
-              <button type="button" class="button-buy">Забронировать</button>
+              <a href="#" class="button-buy">Забронировать</a>
             </div>
             <div class="catalog-rating">
+                <div class="rating-star">
               <span class="star"></span>
               <span class="star"></span>
+            </div>
               <span class="rating">Рейтинг: 9,2</span>
             </div>
           </div>
       </section>
     </main>
     <footer class="main-footer">
-      <p>#VISITSEDONA</p>
+      <a href="index.html" class="hashtag">#VISITSEDONA</a>
       <ul class="footer-social">
         <li><a class="social-button" href="#">Twitter</a></li>
         <li><a class="social-button" href="#">Facebook</a></li>
