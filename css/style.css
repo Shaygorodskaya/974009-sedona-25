@@ -69,7 +69,7 @@ a {
 }
 
 .background::before {
-  background-image: url(../img/welcome.png);
+  background-image: url(../img/intro-welcome.svg);
   width: 459px;
   height: 353px;
   top: 61px;
