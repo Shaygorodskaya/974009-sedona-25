@@ -18,27 +18,54 @@ body {
 .wrapper {
 width: 1200px;
 margin: 0 auto;
-box-shadow: 0 0 5px black;
+box-shadow: 3px 4px 15px 0 rgba(0, 1, 1, 0.2);
+
 }
 
 a {
   text-decoration: none;
 }
 
+.main-header {
+  min-height: 56px;
+}
+.main-header-logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
 .main-navigation {
+  position: relative;
   font-size: 14px;
   color: #000000;
 
   background-color: #ffffff;
 }
+
 .site-navigation,
 .footer-social {
   list-style: none;
 }
 
+.site-navigation {
+display: flex;
+flex-wrap: wrap;
+
+width: 1200px;
+
+font-weight: 700;
+}
+
 .site-navigation a,
 .footer-social a {
   color: #000000;
+  display: block;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  vertical-align: middle;
 }
 
 .site-navigation a:hover {
@@ -52,11 +79,11 @@ a {
 .background {
   position: relative;
 
-  min-height: 510px;
+  height: 510px;
   background-color: #5496bd;
   background-image: url(../img/background-photo.jpg);
   width: 100%;
-
+  margin-top: -14px;
   margin-bottom: 60px;
 }
 
@@ -72,18 +99,21 @@ a {
   background-image: url(../img/intro-welcome.svg);
   width: 459px;
   height: 353px;
-  top: 61px;
+  top: 76px;
   left: 50%;
+
 }
 
 .background::after {
   background-image: url(../img/intro-mask.svg);
   width: 1200px;
-  height: 59px;
-  bottom: -2px;
+  height: 60px;
+  bottom: -3px;
   left: 50%;
 
 }
+
+
 
 .features h2 {
   text-align: center;
@@ -290,3 +320,22 @@ a.button-buy:active {
 .footer-social a:focus {
   text-decoration: none;
 }
+
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 101px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 130px;
+
+  text-align: center;
+}
+
+.academy-logo:hover path,
+.copyright-icon:focus path {
+  fill: #81b3d2;
+}
+
+.academy-logo:active path {
+  fill: #bdbbbc;
