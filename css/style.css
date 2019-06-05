@@ -403,9 +403,6 @@ a.button-buy:active {
   display: flex;
   justify-content: space-between;
   width: 150px;
-
-
-  padding-right: 228px;
 }
 
 
@@ -454,7 +451,6 @@ a.button-buy:active {
   width: 140px;
   text-align: center;
 
-  padding-right: 255px;
 }
 
 .footer-copyright__text {
