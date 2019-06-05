@@ -41,7 +41,6 @@ a {
   text-decoration: none;
 }
 
-/*
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -59,7 +58,7 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-*/
+
 .main-header {
   min-height: 56px;
 }
@@ -432,6 +431,10 @@ a.button-buy:active {
 
 .footer-social__link:hover {
   background-color: #5496bd;
+}
+
+.footer-social__link:active path{
+  fill: #88b6d1;
 }
 
 .academy-logo:hover path,
