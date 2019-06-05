@@ -17,8 +17,17 @@ body {
   text-transform: uppercase;
 
   background-color: #f2f2f2;
+}
 
+p {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+}
 
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .wrapper {
@@ -32,6 +41,25 @@ a {
   text-decoration: none;
 }
 
+/*
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+*/
 .main-header {
   min-height: 56px;
 }
@@ -84,6 +112,7 @@ font-weight: 700;
   vertical-align: middle;
   font-size: 14px;
   line-height: 26px;
+  text-align: center;
 }
 
 .main-menu__link:hover {
@@ -140,12 +169,22 @@ font-weight: 700;
 
 .features p {
   text-align: center;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
 }
+
+
 
 .hotel-form h2 {
   text-align: center;
   font-size: 30px;
   line-height: 24px;
+  margin-bottom: 33px;
+}
+
+.search-form__description {
+  margin-bottom: 52px;
 }
 
 .hotel-form p {
@@ -173,6 +212,28 @@ font-weight: 700;
   font-size: 21px;
   color: #ffffff;
   font-weight: 700;
+  width: 568px;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  margin-bottom: 55px;
+}
+
+.button-search:hover {
+  background-color: #604e43;
+}
+
+.button-search:active {
+background-color: #503e33;
+color: rgba(255, 255, 255, 0.3);
+}
+
+.search-form {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  width: 568px;
 }
 
 .search-form input {
@@ -220,6 +281,11 @@ input.button {
   line-height: 26px;
   font-weight: 700;
   color: #ffffff;
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding-top: 18px;
+  padding-bottom: 18px;
 
   background-color: #81b3d2;
 }
@@ -249,7 +315,7 @@ input.button:active {
 
 /* страница с отелями */
 
-.link-active a {
+.main-menu__link_active{
   color: #766357;
 }
 
@@ -272,18 +338,21 @@ input.button:active {
 }
 
 .item-type {
+  font-size: 14px;
   line-height: 21px;
   color: #333333;
 }
 
-.price {
+.catalog-item-price {
+  font-size: 14px;
   line-height: 21px;
   color: #333333;
 }
 
 .rating {
   color: #666666;
-
+  font-size: 14px;
+  line-height: 26px;
   background-color: #f2f2f2;
 }
 
@@ -321,32 +390,43 @@ a.button-buy:active {
 /* footer */
 .main-footer {
   background-color: rgba(255, 255, 255, 0.9);
-}
+  padding: 37px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 130px;
+  padding-right: 100px;
 
-.main-footer a {
-  font-size: 21px;
-  font-weight: bold;
-  color: #000000;
 }
 
 .footer-social {
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+
+
+  padding-right: 228px;
 }
+
+
 
 .footer-social__link:hover,
 .footer-social__link:focus {
   text-decoration: none;
 }
 
-.main-footer {
+.footer-social__link {
+  width: 46px;
+  height: 48px;
   display: flex;
-  justify-content: space-between;
-  padding-right: 101px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  padding-left: 130px;
+  align-items: center;
+  justify-content: center;
 
-  text-align: center;
+  background-color: #81b3d2;
+}
+
+.footer-social__link:hover {
+  background-color: #5496bd;
 }
 
 .academy-logo:hover path,
@@ -356,3 +436,35 @@ a.button-buy:active {
 
 .academy-logo:active path {
   fill: #bdbbbc;
+}
+
+.footer-copyright {
+  display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 240px;
+   margin: 0;
+}
+
+.footer-hashtag {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+
+  width: 140px;
+  text-align: center;
+
+  padding-right: 255px;
+}
+
+.footer-copyright__text {
+  font-size: 14px;
+  line-height: 26px;
+  display: block;
+  width: 82px;
+}
+
+.footer-copyright__link {
+  width: 115px;
+  height: 41px;
+}
