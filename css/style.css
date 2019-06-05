@@ -159,12 +159,18 @@ font-weight: 700;
 
 }
 
+.container {
+  background-color: #ffffff;
+}
 
 
 .features h2 {
   text-align: center;
   font-size: 21px;
   font-weight: 700;
+  line-height: 26px;
+
+  margin-bottom: 35px;
 }
 
 .features p {
@@ -172,6 +178,8 @@ font-weight: 700;
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
+
+  margin-bottom: 60px;
 }
 
 
