@@ -71,6 +71,10 @@ font-weight: 700;
   width: 20%;
 }
 
+ .main-menu__item:nth-child(2) {
+  margin-right: auto;
+}
+
 .main-menu__link,
 .footer-social__link {
   color: #000000;
