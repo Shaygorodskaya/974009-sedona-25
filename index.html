@@ -32,33 +32,92 @@
       </header>
       <main class="container">
         <div class="promo">
-          <img class="intro" src="img/intro-welcome.svg" alt="Welcome to Sedona">
+          <img class="intro" src="img/intro-welcome.svg" width="459" height="353" alt="Welcome to Sedona">
         </div>
         <section class="features">
           <h2 class="sedona-city">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+          <div class="benefits-wrapper">
+          <ul class="features-list">
+            <li class="features-list__item">
+              <div class="features-list__item-wrapper">
+                <h3 class="features-list__title">Настоящий городок</h3>
+                <span class="benefit-number">— №1 —</span>
+                <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              </div>
+            </li>
+            <li>
+              <ul class="city-benefits">
+               <li class="city-benefit__item">
+                 <h3 class="city-benefit__title home">Жильё</h3>
+                 <p class="city-benefit__item__describthion">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+               </li>
+               <li class="city-benefit__item">
+                 <h3 class="city-benefit__title food">Еда</h3>
+                 <p class="city-benefit__item__describthion">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+               </li>
+               <li class="city-benefit__item">
+                 <h3 class="city-benefit__title souvenirs">Сувениры</h3>
+                 <p class="city-benefit__item__describthion">Не только китайского, но и местного производства!</p>
+               </li>
+             </ul>
+           </li>
+          <li class="features-list__item">
+            <div class="features-list__item-wrapper">
+              <h3 class="features-list__title">Там есть<br>Мост дьявола</h3>
+              <span class="benefit-number">— №2 —</span>
+              <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            </div>
+          </li>
+          <li class="features-list__item">
+            <h3 class="features-list__title">Небольшая площадь</h3>
+            <span class="benefit-number">— №3 —</span>
+            <p>Все достопримечательности находятся очень близко</p>
+          </li>
+          <li class="features-list__item">
+            <h3 class="features-list__title">Красивая дорога</h3>
+            <span class="benefit-number">— №4 —</span>
+            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li class="features-list__item">
+            <h3 class="features-list__title">Мало туристов</h3>
+            <span class="benefit-number">— №5 —</span>
+            <p>Большинство едет в гранд каньон и толпится там</p>
+          </li>
+        </ul>
+      </div>
         </section>
         <section class="hotel-form">
           <h2>Заинтересовались?</h2>
           <p class="search-form__description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-          <a href="#" class="button button-search">Поиск гостиницы в Седоне</a>
-          <form class="search-form" action="#" method="get">
-            <div class="search-item">
-              <label class="search-form" for="date-arrival">Дата заезда:</label>
-              <input id="date-arrival" type="date" name="date-arrival" min="2017-04-01">
-              <label class="search-form" for="date-leave">Дата выезда:</label>
-              <input id="date-leave" type="date" min="2017-04-01" name="date-leave">
-              <label for="adults" class="search-form">Взрослые:</label>
-              <button type="button" class="button btn-minus">-</button>
-              <input type="number" name="adults" id="adults" value="2">
-              <button type="button" class="button btn-plus">+</button>
-              <label for="kids" class="search-form">Дети:</label>
-              <button type="button" class="button btn-minus">-</button>
-              <input type="number" name="kids" id="kids" value="0">
-              <button type="button" class="button btn-plus">+</button>
-              <input type="submit" class="button" value="Найти">
-            </div>
-          </form>
+          <div class="search-wrapper">
+            <a href="#" class="button button-search">Поиск гостиницы в Седоне</a>
+              <div class="form-wrapper">
+                <form class="search-form" action="#" method="get">
+                  <fieldset class="search-form__set">
+                    <div class="search-item">
+                      <label class="search-form" for="date-arrival">Дата заезда:</label>
+                      <input id="date-arrival" type="date" name="date-arrival" min="2017-04-01">
+                      <label class="search-form" for="date-leave">Дата выезда:</label>
+                      <input id="date-leave" type="date" min="2017-04-01" name="date-leave">
+                      <label for="adults" class="search-form">Взрослые:</label>
+                      <button type="button" class="button btn-minus">-</button>
+                      <input type="number" name="adults" id="adults" value="2">
+                      <button type="button" class="button btn-plus">+</button>
+                      <label for="kids" class="search-form">Дети:</label>
+                      <button type="button" class="button btn-minus">-</button>
+                      <input type="number" name="kids" id="kids" value="0">
+                      <button type="button" class="button btn-plus">+</button>
+                      <input type="submit" class="button find-button" value="Найти">
+                    </div>
+                  </fieldset>
+                </form>
+              </div>
+         </div>
+        </section>
+        <section class="map">
+           <h2 class="visually-hidden">Карта</h2>
+          <img src="img/map.png" alt="Мы находимся по адресу - Аризона 86336, США" width="1200" height="593">
         </section>
       </main>
       <footer class="main-footer">

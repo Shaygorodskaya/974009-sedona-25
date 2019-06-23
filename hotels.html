@@ -31,19 +31,86 @@
         </nav>
       </header>
       <main>
-        <div class="wrapper-hotels">
-          <section class="catalog-item">
+        <section class="filters">
+          <h2 class="visually-hidden">Фильтр выбора жилья</h2>
+          <form class="infrastructure" action="#" method="get">
+            <div class="filters-infrastructure">
+              <h3>Инфраструктура:</h3>
+              <label>Бассейн
+                <input type="checkbox" name="pool" checked="">
+              </label>
+              <label>Парковка
+                <input type="checkbox" name="parking">
+              </label>
+              <label>Wi-Fi
+                <input type="checkbox" name="wi-fi">
+              </label>
+            </div>
+            <div class="filters-property-type">
+              <h3>Тип жилья:</h3>
+              <label>Гостиница
+                <input type="checkbox" name="hotel" checked="">
+              </label>
+              <label>Мотель
+                <input type="checkbox" name="motel" checked="">
+              </label>
+              <label>Апартаменты
+                <input type="checkbox" name="apartments" checked="">
+              </label>
+            </div>
+          </form>
+            <div class="filter-range">
+                <div class="filter-range-title">Стоимость в сутки (р):</div>
+                <div class="price-controls">
+                  <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                  <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+                </div>
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="range-toggle range-toggle-min"></div>
+                  <div class="range-toggle range-toggle-max"></div>
+                </div>
+                <button class="btn-transparent" type="submit">Показать</button>
+              </div>
+          </form>
+        </section>
+        <div class="sorting-options-wrapper">
+          <div class="found"><span>Найдено: 3</span></div>
+          <div class="sort-type">Сортировка:</div>
+          <div class="filering-options">
+            <ul class="soring-types-list">
+              <li class="sorting-type by-price"><a href="#">По цене</a></li>
+              <li class="sorting-type by-type"><a href="#">По типу</a></li>
+              <li class="sorting-type by-rating"><a href="#">По рейтингу</a></li>
+            </ul>
+          </div>
+          <div class="sorting-order">
+            <a class="sort-direction-up" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
+            </a>
+            <a class="sort-direction-down" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg>
+            </a>
+          </div>
+        </div>
+        <section class="catalog-item">
+          <div class="catalog-item-image">
+            <img src="img/hotel-1.png" width="135" height="90" alt="Amarta Resert & SPA">
+          </div>
             <div class="catalog-item-name">
-              <img src="img/hotel-1.png" class="catalog-item-image" width="135" height="90" alt="Amarta Resert & SPA">
                 <a href="#" class="catalog-category">
                   <h3>Amarta Resert &amp SPA</h3>
                 </a>
               <div class="catalog-item-describthion">
                 <span class="item-type">Гостиница</span>
                 <span class="catalog-item-price">от 4000 ₽</span>
-                <a href="#" class="button button-detail">Подробнее</a>
-                <a href="#" class="button button-buy">Забронировать</a>
               </div>
+                <div class="buttons-wrapper">
+                  <a href="#" class="button button-detail">Подробнее</a>
+                  <a href="#" class="button button-buy">Забронировать</a>
+                </div>
               <div class="catalog-rating">
                 <div class="rating-star">
                   <span class="star"></span>
@@ -56,7 +123,9 @@
             </div>
           </section>
           <section class="catalog-item">
-            <img src="img/hotel-2.png" class="catalog-item-image" width="135" height="90" alt="Desert Quail Inn">
+            <div class="catalog-item-image">
+              <img src="img/hotel-2.png" width="135" height="90" alt="Desert Quail Inn">
+            </div>
             <div class="catalog-item-name">
               <a href="#" class="catalog-category">
                 <h3>Desert Quail Inn</h3>
@@ -64,6 +133,8 @@
               <div class="catalog-item-describthion">
                 <span class="item-type">Мотель</span>
                 <span class="catalog-item-price">от 3000 ₽</span>
+              </div>
+              <div class="buttons-wrapper">
                 <a href="#" class="button button-detail">Подробнее</a>
                 <a href="#" class="button button-buy">Забронировать</a>
               </div>
@@ -78,7 +149,9 @@
             </div>
           </section>
           <section class="catalog-item">
-            <img src="img/hotel-3.png" class="catalog-item-image" width="135" height="90" alt="VILLAS AT POCO DIABLO">
+            <div class="catalog-item-image">
+              <img src="img/hotel-3.png" width="135" height="90" alt="VILLAS AT POCO DIABLO">
+            </div>
             <div class="catalog-item-name">
               <a href="#" class="catalog-category">
                 <h3>VILLAS AT POCO DIABLO</h3>
@@ -86,6 +159,8 @@
               <div class="catalog-item-describthion">
                 <span class="item-type">Апартаменты</span>
                 <span class="catalog-item-price">от 2000 ₽</span>
+              </div>
+              <div class="buttons-wrapper">
                 <a href="#" class="button button-detail">Подробнее</a>
                 <a href="#" class=" button button-buy">Забронировать</a>
               </div>
@@ -98,7 +173,6 @@
               </div>
             </div>
         </section>
-      </div>
     </main>
     <footer class="main-footer">
       <a class="footer-hashtag">#VISITSEDONA</a>

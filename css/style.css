@@ -1,7 +1,6 @@
 * {
 margin: 0;
 padding: 0;
-font-size: 0
 }
 
 body {
@@ -63,6 +62,7 @@ input[type="radio"].visually-hidden {
 .main-header {
   min-height: 56px;
 }
+
 .main-header-logo {
   position: absolute;
   top: 0;
@@ -82,7 +82,6 @@ input[type="radio"].visually-hidden {
 .main-menu,
 .footer-social {
   list-style: none;
-
 }
 
 .main-menu {
@@ -114,13 +113,6 @@ font-weight: 700;
   text-align: center;
 }
 
-.intro {
-display: block;
-width: 459px;
-height: 353px;
-margin: 0 auto;
-}
-
 .main-menu__link:hover {
   color: #81b3d2;
 }
@@ -129,26 +121,37 @@ margin: 0 auto;
   color: rgba(0, 0, 0, 0.3);
 }
 
+
+/*фон на главной*/
+.intro {
+  display: block;
+  width: 459px;
+  height: 353px;
+  margin: 0 auto;
+  padding-top: 75px;
+}
+
 .promo {
+  display: block;
   position: relative;
 
   height: 510px;
   background-color: #5496bd;
-  background-image: url(../img/background-photo.jpg);
+  background: url("../img/background-photo.jpg") no-repeat 50% 23%;
   width: 100%;
-  margin-bottom: 60px;
+
 }
 
-.promo::after, {
-  content: '';
+.promo::before {
   display: block;
+  content: '';
   position: absolute;
   transform: translateX(-50%);
-  background-image: url(../img/intro-mask.svg);
   width: 1200px;
-  height: 57px;
+  background-image: url(../img/intro-mask.svg);
   bottom: 0;
   left: 50%;
+  height: 57px;
 
 }
 
@@ -156,6 +159,23 @@ margin: 0 auto;
   background-color: #ffffff;
 }
 
+.sedona-city {
+  width: 445px;
+
+  display: block;
+
+  padding: 0;
+  margin: 0 auto 28px;
+}
+
+.features {
+  padding-top: 60px;
+}
+
+.benefits-wrapper {
+  width: 1200px;
+  margin-top: 50px;
+}
 
 .features h2 {
   text-align: center;
@@ -175,20 +195,67 @@ margin: 0 auto;
   margin-bottom: 60px;
 }
 
+.features-list,
+.city-benefits {
+  list-style: none;
+}
 
+.features-list {
+  width: 1200px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+
+.features-list__title {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.city-benefits {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 70px;
+  padding-right: 62px;
+  padding-bottom: 88px;
+  padding-top: 60px;
+}
+
+.city-benefit__item__describthion {
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.city-benefit__title {
+  color: #000000;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+
+.hotel-form {
+  position: relative;
+ padding: 0 316px;
+ padding-top: 50px;
+}
 
 .hotel-form h2 {
   text-align: center;
   font-size: 30px;
-  line-height: 24px;
-  margin-bottom: 33px;
+  line-height: 36px;
+  font-weight: 700;
+  padding-bottom: 24px;
 }
 
 .search-form__description {
-  margin-bottom: 52px;
-}
-
-.hotel-form p {
+  padding-bottom: 47px;
   line-height: 24px;
   text-align: center;
 }
@@ -235,21 +302,57 @@ color: rgba(255, 255, 255, 0.3);
   line-height: 26px;
   font-weight: 700;
   width: 568px;
-  box-shadow: 0 7px 15px 0 rgba(0,1,1,.15);
+
+  display: flex;
+  justify-content: space-between;
+
 }
 
-.hotel-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+.search-wrapper {
+  box-shadow: 0 7px 15px 0 rgba(0,1,1,.15);
+
+}
+
+.form-wrapper {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -287px;
+  z-index: 1;
+  width: 575px;
+  min-height: 396px;
+  padding: 55px 56px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
 
 
+.search-item input[type=date] {
+  width: 345px;
+  border: none;
+  background-color: #f2f2f2;
+  height: 38px;
+
+  padding-left: 12px;
+
+}
+
+.date-fields {
+  position: relative;
+
+  margin-bottom: 30px;
+  text-align: right;
 }
 
 .search-item {
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
+}
+
+.search-form__set {
+  border: none;
 }
 
 .search-form input {
@@ -297,13 +400,14 @@ button.btn-plus:focus {
   outline: 1px solid #e5e5e5;
 }
 
-input.button {
+input.find-button  {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   color: #ffffff;
+
   display: block;
-  width: 100%;
+  width: 458px;
   text-align: center;
   padding-top: 18px;
   padding-bottom: 18px;
@@ -311,11 +415,12 @@ input.button {
   background-color: #81b3d2;
 }
 
-input.button:hover {
+input.find-button:hover,
+input.find-button:focus {
   background-color: #669ec0;
 }
 
-input.button:active {
+input.find-button:active {
     color: rgba(255, 255, 255, 0.3);
 }
 
@@ -362,6 +467,12 @@ input.button:active {
   font-size: 14px;
   line-height: 21px;
   color: #333333;
+
+  padding-right: 28px;
+}
+
+.catalog-item-describthion {
+  padding-bottom: 17px;
 }
 
 .catalog-item-price {
@@ -375,12 +486,24 @@ input.button:active {
   font-size: 14px;
   line-height: 26px;
   background-color: #f2f2f2;
+
+  width: 110px;
+  height: 27px;
+
+ display: block;
+
+ text-align: center;
+
+
 }
 
 a.button-detail {
   line-height: 21px;
   font-weight: 700;
   color: #ffffff;
+  padding: 3px 16px;
+  text-align: center;
+  display: block;
 
   background-color: #81b3d2;
 }
@@ -397,6 +520,9 @@ a.button-buy {
   line-height: 21px;
   font-weight: 700;
   color: #ffffff;
+  padding: 3px 16px;
+  text-align: center;
+  display: block;
 
   background-color: #766357;
 }
@@ -408,6 +534,210 @@ a.button-buy:hover {
 a.button-buy:active {
   color: rgba(255, 255, 255, 0.3);
 }
+
+.catalog-item {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #e5e5e5;
+   padding: 30px 0;
+  }
+
+/* Форма на странице с отелями*/
+
+.filters {
+    padding: 30px 6% 14px;
+    background: #cacaca url(../img/filter-background.jpg) center 15% no-repeat;
+    color: #fff;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sorting {
+      padding: 30px 6%;
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+
+  .filter-range {
+  width: 330px;
+  margin: 50px auto; /* для демо */
+
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.filter-range-title {
+  margin-bottom: 9px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price-controls {
+  position: relative;
+
+  height: 36px;
+  margin-bottom: 20px;
+
+  font-size: 0;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+
+  background: #ffffff;
+}
+
+.soring-types-list {
+  list-style: none;
+}
+
+
+.item-type,
+.catalog-item-price {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.buttons-wrapper {
+  width: 261px;
+ display: flex;
+ justify-content: space-between;
+}
+
+/*Форма на стр с отелями, перенесии */
+
+.filters input[type=checkbox] {
+    display: none;
+  }
+
+.filters-infrastructure {
+
+}
+
+/*отели*/
+
+.catalog-item {
+  padding: 30px 72px;
+}
+
+.catalog-item-image {
+  padding-right: 30px;
+  padding-top: 6px;
+}
+
+.catalog-category {
+  padding-bottom: 6px;
+}
+
 /* footer */
 .main-footer {
   background-color: rgba(255, 255, 255, 0.9);
@@ -443,6 +773,7 @@ a.button-buy:active {
   width: 46px;
   height: 48px;
 
+  padding: 0;
   background-color: #81b3d2;
   font-size: 0;
 }
